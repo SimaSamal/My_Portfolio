@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth; /* Enables smooth scrolling */
+    }
+
+/* Card hover animation */
+        .hobby-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Glow effect on icons */
+        .hobby-icon:hover {
+            box-shadow: 0 0 15px rgba(66, 153, 225, 0.6);
+        }
+
+
+  </style>
+</head>
+
+
+<body class="bg-gray-900 text-white">
+  <header class="bg-transparent fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex items-center justify-center h-16">
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold text-white mr-8">Sima</h1>
+  
+      <!-- Navigation -->
+      <nav class="flex space-x-6 items-center">
+        <a href="#home" class="text-white hover:text-green-400 transition duration-300">Home</a>
+        <a href="#about" class="text-white hover:text-green-400 transition duration-300">About</a>
+        <a href="#skills" class="text-white hover:text-green-400 transition duration-300">Skills</a>
+        <a href="#services" class="text-white hover:text-green-400 transition duration-300">Services</a>
+        <a href="#stats" class="text-white hover:text-green-400 transition duration-300">Stats</a>
+      </nav>
+    </div>
+  </header>
+  
+
+
+ <!-- Hero Section -->
+ <section id="home" >
+  <header class="relative h-screen bg-cover bg-center" style="background-image: url('1.webp');">
+    <div class="absolute inset-0 bg-black opacity-70"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center">
+    
+      <h1 class="text-4xl font-bold text-red-400">Sima Samal</h1>
+      <p class="text-xl text-gray-300">A Multi-Talented Digital Creator & Web Developer</p>
+      <div class="mt-8">
+        <button class="border border-red-400 text-red-400 px-6 py-2 rounded hover:bg-red-400 hover:text-white transition">Contact Me</button>
+      </div>
+    </div>
+  </header>
+</section>
+
+  <!-- About Section -->
+  <section  id="about" class="py-16 px-4 bg-gray-800">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Profile Image -->
+      <div class="flex items-center justify-center">
+        <img src="simafp.png" alt="Profile" class="rounded-lg shadow-lg">
+      </div>
+      <!-- About Content -->
+      <div>
+        <h2 class="text-red-400 text-lg font-semibold mb-2">Discover</h2>
+        <h3 class="text-3xl font-bold mb-4">About Me</h3>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          I am Sima Samal, a passionate and creative professional with a recently completed MCA degree. Over the past three years, I have gained valuable experience in design and technology, building expertise in web development, UI/UX design, logo design, digital marketing, and content writing.
+          <br><br>
+          I specialize in crafting user-friendly websites, visually striking logos, engaging presentations, and impactful marketing campaigns. My skills in PowerPoint presentations allow me to communicate ideas effectively, while my foundation in technology and design helps me blend innovation with creativity to deliver exceptional results.
+        </p>
+        <div class="grid grid-cols-2 gap-4 mb-6 text-sm text-gray-400">
+          <p><strong class="text-white">Name:</strong> Sima Samal</p>
+          <p><strong class="text-white">Age:</strong> 23</p>
+          <p><strong class="text-white">Experience:</strong> 1 Years</p>
+          <p><strong class="text-white">Address:</strong> Bhubaneswar, Odisha</p>
+          <p><strong class="text-white">Phone:</strong> +91 637-205-6799</p>
+          <p><strong class="text-white">Freelance:</strong> Available</p>
+          <p><strong class="text-white">Email:</strong> simasamals2002@gmail.com</p>
+          <p><strong class="text-white">GitHub:</strong></p>
+        </div>
+        <button class="bg-red-500 px-6 py-2 rounded hover:bg-red-600 transition">Download CV</button>
+      </div>
+    </div>
+  </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-gray-900">
+         <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-red-400 text-lg font-semibold mb-2 text-center">What I Do</h2>
+            <h3 class="text-3xl font-bold mb-8 text-center">My Services</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+          <!-- Service 1 -->
+        <div class="p-6 bg-gray-800 rounded-lg text-center transition-all duration-300 transform hover:translate-y-[-10px] hover:border-2 hover:border-red-400 hover:shadow-lg">
+             
+          <div class="text-red-400 text-4xl mb-4">
+            &#128295;
+        </div>
+          <h4 class="text-xl font-semibold mb-2 text-white">Web Development</h4>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Crafting responsive and functional websites using HTML, CSS, JavaScript, PHP, and WordPress.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="p-6 bg-gray-800 rounded-lg text-center transition-all duration-300 transform hover:translate-y-[-10px] hover:border-2 hover:border-red-400 hover:shadow-lg">
+
+          <div class="text-red-400 text-4xl mb-4">
+            &#128188;
+          </div>
+          <h4 class="text-xl font-semibold mb-2">UI/UX Design</h4>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Designing user-friendly interfaces with tools like Figma and Adobe XD.
+          </p>
+        </div>
+        <!-- Service 3 -->
+        <div class="p-6 bg-gray-800 rounded-lg text-center transition-all duration-300 transform hover:translate-y-[-10px] hover:border-2 hover:border-red-400 hover:shadow-lg">
+          <div class="text-red-400 text-4xl mb-4">
+            &#128421;
+          </div>
+          <h4 class="text-xl font-semibold mb-2">Digital Marketing</h4>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Social media management, SEO strategies, and ad campaigns (Google Ads, Facebook Ads).
+          </p>
+        </div>
+        <!-- Service 4 -->
+        <div class="p-6 bg-gray-800 rounded-lg text-center transition-all duration-300 transform hover:translate-y-[-10px] hover:border-2 hover:border-red-400 hover:shadow-lg">
+          
+          <div class="text-red-400 text-4xl mb-4">
+            &#128421;
+          </div>
+          <h4 class="text-xl font-semibold mb-2">User Interface</h4>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Custom poster design, brochures, animations, and presentations.
+          </p>
+        </div>
+        <!-- Service 5 -->
+        <div class="p-6 bg-gray-800 rounded-lg text-center transition-all duration-300 transform hover:translate-y-[-10px] hover:border-2 hover:border-red-400 hover:shadow-lg">
+          <div class="text-red-400 text-4xl mb-4">1
+            &#128421;
+          </div>
+          <h4 class="text-xl font-semibold mb-2">User Interface</h4>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          </p>
+        </div>
+        <!-- Service 6 -->
+        <div class="p-6 bg-gray-800 rounded-lg text-center transition-all duration-300 transform hover:translate-y-[-10px] hover:border-2 hover:border-red-400 hover:shadow-lg">          <div class="text-red-400 text-4xl mb-4">
+            &#128421;
+          </div>
+          <h4 class="text-xl font-semibold mb-2">User Interface</h4>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+ <!-- Skills Section -->
+<section id="skills" class="bg-[#0D1117] py-24 px-8">
+  <div class="container mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-12 text-white">Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <!-- Skill 1 -->
+      <div class="group relative p-6 bg-gray-800 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-1s">
+        <h4 class="text-2xl font-bold mb-2 text-white">89%</h4>
+        <p class="text-gray-400 mb-4">Adobe Photoshop</p>
+        <div class="w-full h-2 bg-gray-700">
+          <div class="bg-pink-500 h-2 w-0 group-hover:w-[89%] transition-all duration-500"></div>
+        </div>
+      </div>
+
+      <!-- Skill 2 -->
+      <div class="group relative p-6 bg-gray-800 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-2s">
+        <h4 class="text-2xl font-bold mb-2 text-white">79%</h4>
+        <p class="text-gray-400 mb-4">UI/UX Design</p>
+        <div class="w-full h-2 bg-gray-700">
+          <div class="bg-indigo-500 h-2 w-0 group-hover:w-[79%] transition-all duration-500"></div>
+        </div>
+      </div>
+
+      <!-- Skill 3 -->
+      <div class="group relative p-6 bg-gray-800 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-3s">
+        <h4 class="text-2xl font-bold mb-2 text-white">67%</h4>
+        <p class="text-gray-400 mb-4">Adobe Illustrator</p>
+        <div class="w-full h-2 bg-gray-700">
+          <div class="bg-green-500 h-2 w-0 group-hover:w-[67%] transition-all duration-500"></div>
+        </div>
+      </div>
+
+      <!-- Skill 4 -->
+      <div class="group relative p-6 bg-gray-800 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl animate__animated animate__fadeIn animate__delay-4s">
+        <h4 class="text-2xl font-bold mb-2 text-white">88%</h4>
+        <p class="text-gray-400 mb-4">Web Development</p>
+        <div class="w-full h-2 bg-gray-700">
+          <div class="bg-purple-500 h-2 w-0 group-hover:w-[88%] transition-all duration-500"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Hobby Section -->
+<section id="hobbies" class="py-16 px-6">
+  <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-800">Hobbies & Interests</h2>
+      <p class="text-lg text-gray-600 mt-3">Here are the activities I love to indulge in during my free time.</p>
+  </div>
+  
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Hobby Card 1 -->
+      <div class="hobby-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300">
+          <div class="hobby-icon w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <img src="badminton.jpg" alt="Badminton" class="w-10 h-10">
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Badminton</h3>
+          <p class="text-gray-600 mt-3">I enjoy playing badminton as it keeps me active and motivated.</p>
+      </div>
+
+      <!-- Hobby Card 2 -->
+      <div class="hobby-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300">
+          <div class="hobby-icon w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+              <img src="basketball.jpg" alt="Basketball" class="w-10 h-10">
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Basketball</h3>
+          <p class="text-gray-600 mt-3">Basketball helps me stay focused and sharp with teamwork skills.</p>
+      </div>
+
+      <!-- Hobby Card 3 -->
+      <div class="hobby-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300">
+          <div class="hobby-icon w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+              <img src="design.jpg" alt="Design" class="w-10 h-10">
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Design</h3>
+          <p class="text-gray-600 mt-3">Designing creative visuals is my passion and a way to express myself.</p>
+      </div>
+
+      <!-- Hobby Card 4 -->
+      <div class="hobby-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300">
+          <div class="hobby-icon w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+              <img src="travel.jpg" alt="Travel" class="w-10 h-10">
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Traveling</h3>
+          <p class="text-gray-600 mt-3">Exploring new places broadens my horizons and inspires creativity.</p>
+      </div>
+
+      <!-- Hobby Card 5 -->
+      <div class="hobby-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300">
+          <div class="hobby-icon w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+              <img src="reading.jpg" alt="Reading" class="w-10 h-10">
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Reading</h3>
+          <p class="text-gray-600 mt-3">I love diving into books, exploring different ideas and worlds.</p>
+      </div>
+
+      <!-- Hobby Card 6 -->
+      <div class="hobby-card bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center transform transition-transform duration-300">
+          <div class="hobby-icon w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <img src="gaming.jpg" alt="Gaming" class="w-10 h-10">
+          </div>
+          <h3 class="text-2xl font-semibold text-gray-800">Gaming</h3>
+          <p class="text-gray-600 mt-3">Gaming is a fun way to unwind and challenge myself strategically.</p>
+      </div>
+  </div>
+</section>
+
+
+ <!-- Footer Section -->
+ <footer class="bg-[#161B22] py-8 px-8 text-center">
+  <p class="text-gray-400">&copy; 2024 Porichiti. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
