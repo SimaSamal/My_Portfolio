@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sima Samal – Project Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Hero Section -->
+  <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('/assets/projects/hero-bg.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative z-10 max-w-2xl px-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Welcome to My Project Gallery</h1>
+      <p class="text-lg text-gray-200">Explore banners, designs, and creative works I've built with passion.</p>
+    </div>
+  </section>
+
+  <!-- Random Image Grid -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Featured Banners</h2>
+    <div id="gallery" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2"></div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center">
+    <button id="closeModal" class="absolute top-4 right-4 text-white text-4xl font-bold">&times;</button>
+    <button id="prevBtn" class="absolute left-4 text-white text-4xl font-bold">&larr;</button>
+    <div class="max-w-[90vw] max-h-[90vh] overflow-auto">
+      <img id="modalImage" class="w-auto h-auto max-w-full max-h-full object-contain bg-white shadow-xl" />
+    </div>
+    <button id="nextBtn" class="absolute right-4 text-white text-4xl font-bold">&rarr;</button>
+  </div>
+
+  <!-- Portfolio PDF Section -->
+  <section class="py-12 bg-gray-200 text-center">
+    <h2 class="text-3xl font-bold mb-4">Download My Portfolio</h2>
+    <p class="text-gray-600 mb-6">View my complete collection of creative work in PDF format.</p>
+    <button id="open-pdf" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition">Open Portfolio PDF</button>
+  </section>
+
+  <!-- Masonry Grid -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">More Designs</h2>
+    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/2.jpg" alt="Design 1" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/project_1.png" alt="Design 2" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/home/simafp.png" alt="Design 3" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/project_1.png" alt="Design 4" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/project_1.png" alt="Design 5" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/home/simafp.png" alt="Design 6" class="w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    const images = [
+      'assets/banner/1.jpg',
+      'assets/banner/2.jpg',
+      'assets/banner/3.jpg',
+      'assets/banner/4.jpg',
+      'assets/banner/5.jpg',
+      'assets/banner/6.jpg',
+      'assets/banner/7.jpg',
+      'assets/banner/8.jpg',
+      'assets/banner/9.jpg',
+      'assets/banner/10.jpg',
+    ];
+
+    const shuffled = images.sort(() => 0.5 - Math.random());
+    const gallery = document.getElementById('gallery');
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modalImage');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      currentIndex = index;
+      modalImage.src = shuffled[currentIndex];
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % shuffled.length;
+      modalImage.src = shuffled[currentIndex];
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + shuffled.length) % shuffled.length;
+      modalImage.src = shuffled[currentIndex];
+    }
+
+    shuffled.slice(0, 8).forEach((src, index) => {
+      const div = document.createElement('div');
+      div.className = "relative group cursor-pointer overflow-hidden";
+
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = "Gallery Image";
+      img.className = "w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300";
+
+      const overlay = document.createElement('div');
+      overlay.className = "absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white text-center py-1 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300";
+      overlay.textContent = "View";
+
+      div.appendChild(img);
+      div.appendChild(overlay);
+      div.addEventListener('click', () => showImage(index));
+      gallery.appendChild(div);
+    });
+
+    document.getElementById('closeModal').addEventListener('click', closeModal);
+    document.getElementById('nextBtn').addEventListener('click', showNext);
+    document.getElementById('prevBtn').addEventListener('click', showPrev);
+
+    document.addEventListener('keydown', (e) => {
+      if (modal.classList.contains('hidden')) return;
+      if (e.key === 'ArrowRight') showNext();
+      else if (e.key === 'ArrowLeft') showPrev();
+      else if (e.key === 'Escape') closeModal();
+    });
+
+    // Open Portfolio PDF
+    document.getElementById('open-pdf').addEventListener('click', () => {
+      window.open('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', '_blank');
+    });
+  </script>
+
+</body>
+</html>

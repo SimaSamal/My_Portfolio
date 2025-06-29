@@ -10,8 +10,7 @@
     html {
       scroll-behavior: smooth; /* Enables smooth scrolling */
     }
-
-/* Card hover animation */
+    /* Card hover animation */
         .hobby-card:hover {
             transform: scale(1.05);
             box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
@@ -42,43 +41,57 @@
       </nav>
     </div>
   </header>
-  
+  <!-- Hero Section -->
+<section id="home">
+  <header class="relative h-screen bg-cover bg-center" style="background-image: url('/assets/home/hero.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
 
- <!-- Hero Section -->
- <section id="home" >
-  <header class="relative h-screen bg-cover bg-center" style="background-image: url('/assets/home/1.webp');">
-    <div class="absolute inset-0 bg-black opacity-70"></div>
-    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center">
-    
-      <h1 class="text-4xl font-bold text-red-400">Sima Samal</h1>
-      <p class="text-xl text-gray-300">A Multi-Talented Digital Creator & Web Developer</p>
-      <div class="mt-8">
-  <a href="https://wa.me/916372056799" target="_blank">
-    <button class="border border-red-400 text-red-400 px-6 py-2 rounded hover:bg-red-400 hover:text-white transition">
-      Connect Me
-    </button>
-  </a>
-  <div class="flex justify-center space-x-6 mt-4">
-          <a href="https://www.facebook.com/profile.php?id=61568298574536" target="_blank" class="text-red-400 hover:text-blue-500">
-              <i class="fa-brands fa-facebook-f text-xl"></i>
-          </a>
-          <a href="https://x.com/SamalSima2002" target="_blank" class="text-red-400 hover:text-blue-400">
-              <i class="fa-brands fa-x-twitter text-xl"></i>
-          </a>
-          <a href="https://www.instagram.com/sima_samal_01/" target="_blank" class="text-red-400 hover:text-pink-500">
-              <i class="fa-brands fa-instagram text-xl"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/sima-samal-571406254/" target="_blank" class="text-red-400 hover:text-blue-600">
-              <i class="fa-brands fa-linkedin-in text-xl"></i>
-          </a>
-          <a href="https://www.youtube.com/@Simasamal-kr3hf" target="_blank" class="text-red-400 hover:text-red-500">
-              <i class="fa-brands fa-youtube text-xl"></i>
-          </a>
-          <a href="https://www.blogger.com/blog/posts/5559635700899166548?hl=en-GB&tab=jj" target="_blank" class="text-red-400 hover:text-red-500">
-  <i class="fa-brands fa-blogger text-xl"></i>
-</a>
+    <!-- Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+      <!-- Profile Image -->
+      <img src="/assets/home/simafp.png" alt="Profile" class="rounded-lg shadow-lg w-40 md:w-52 lg:w-60 mb-6">
+
+      <!-- Name and Title -->
+      <h1 class="text-4xl md:text-5xl font-bold text-red-400">Sima Samal</h1>
+      <p class="text-xl md:text-2xl text-gray-300 mt-2">A Multi-Talented Digital Creator & Web Developer</p>
+
+      <!-- Connect 
+      <div class="mt-6">
+        <a href="https://wa.me/916372056799" target="_blank">
+          <button class="border border-red-400 text-red-400 px-6 py-2 rounded hover:bg-red-400 hover:text-white transition">
+            Connect Me
+          </button>
+        </a>
+      </div>
+ Button -->
+<div class="flex justify-center mt-6">
+  <button onclick="verifyPassword()" class="border border-red-400 text-red-400 px-6 py-2 rounded hover:bg-red-400 hover:text-white transition">
+    See More Projects
+  </button>
 </div>
 
+<!-- Social Icons -->
+      <div class="flex justify-center space-x-6 mt-6">
+        <a href="https://www.facebook.com/profile.php?id=61568298574536" target="_blank" class="text-red-400 hover:text-blue-500">
+          <i class="fa-brands fa-facebook-f text-xl"></i>
+        </a>
+        <a href="https://x.com/SamalSima2002" target="_blank" class="text-red-400 hover:text-blue-400">
+          <i class="fa-brands fa-x-twitter text-xl"></i>
+        </a>
+        <a href="https://www.instagram.com/sima_samal_01/" target="_blank" class="text-red-400 hover:text-pink-500">
+          <i class="fa-brands fa-instagram text-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sima-samal-571406254/" target="_blank" class="text-red-400 hover:text-blue-600">
+          <i class="fa-brands fa-linkedin-in text-xl"></i>
+        </a>
+        <a href="https://www.youtube.com/@Simasamal-kr3hf" target="_blank" class="text-red-400 hover:text-red-500">
+          <i class="fa-brands fa-youtube text-xl"></i>
+        </a>
+        <a href="https://www.blogger.com/blog/posts/5559635700899166548?hl=en-GB&tab=jj" target="_blank" class="text-red-400 hover:text-orange-600">
+          <i class="fa-brands fa-blogger text-xl"></i>
+        </a>
+      </div>
     </div>
   </header>
 </section>
@@ -110,17 +123,22 @@
           <p><strong class="text-white">Email :</strong> simasamals2002@ gmail.com</p>
           <p><strong class="text-white">GitHub :</strong> https://github.com/ SimaSamal</p>
         </div>
-        <div class="grid grid-cols-2 gap-4 mb-6 text-sm ">
-        <a href="/assets/SIMA_SAMAL_25.pdf" download>
-          <button class="bg-red-500 px-6 py-2 rounded hover:bg-red-600 transition">
-               Download My Resume
-          </button>
-        </a>
+        <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
+  <!-- Download Resume -->
+  <a href="/assets/SIMA_SAMAL_25.pdf" download>
+    <button class="bg-red-500 px-6 py-2 rounded hover:bg-red-600 transition">
+      Download My Resume
+    </button>
+  </a>
 
-        <button class="bg-red-500 px-6 py-2 rounded hover:bg-red-600 transition">More</button>
-      </div>
-      
-      </div>
+  <!-- Connect on WhatsApp -->
+  <a href="https://wa.me/916372056799" target="_blank">
+    <button class="bg-green-500 px-6 py-2 rounded hover:bg-green-600 transition">
+      Connect on WhatsApp
+    </button>
+  </a>
+</div>
+</div>
     </div>
   </section>
    
@@ -382,11 +400,28 @@
 
     <!-- Repeat for other projects -->
   </div>
-</section>
+  <!-- Button -->
+<div class="flex justify-center mt-10">
+  <button onclick="verifyPassword()" class="bg-red-400 text-white px-6 py-2 rounded hover:bg-red-500 transition duration-300">
+    See More Projects
+  </button>
+</div>
 
+<!-- Script -->
+<script>
+  function verifyPassword() {
+    const correctPassword = "sima123"; // Change this to your desired password
+    const userInput = prompt("Enter password to view more projects:");
 
+    if (userInput === correctPassword) {
+      window.location.href = "/project.html"; // Change to your actual page
+    } else if (userInput !== null) {
+      alert("Incorrect password. Please try again.");
+    }
+  }
+</script>
 
- <!-- Footer Section -->
+</section> <!-- Footer Section -->
  <footer class="bg-gray-900 text-white py-6">
   <div class="container mx-auto text-center">
       <p class="text-sm">©Sima Samal</p>
@@ -409,14 +444,7 @@
           <a href="https://www.blogger.com/blog/posts/5559635700899166548?hl=en-GB&tab=jj" target="_blank" class="text-red-400 hover:text-red-500">
   <i class="fa-brands fa-blogger text-xl"></i>
 </a>
-
-
-
-      </div>
+     </div>
   </div>
-</footer>
-
-
-
-</body>
+</footer></body>
 </html>
