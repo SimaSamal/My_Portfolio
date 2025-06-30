@@ -9,13 +9,90 @@
 <body class="bg-gray-100 text-gray-900">
 
   <!-- Hero Section -->
-  <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('/assets/projects/hero-bg.jpg');">
+  <section class="relative h-[60vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('/assets/project/hero.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-70"></div>
     <div class="relative z-10 max-w-2xl px-4">
       <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Welcome to My Project Gallery</h1>
       <p class="text-lg text-gray-200">Explore banners, designs, and creative works I've built with passion.</p>
     </div>
   </section>
+
+  <section class="bg-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">More Designs</h2>
+    <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/1.jpg" alt="Design 1" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/2.png" alt="Design 2" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/3.png" alt="Design 3" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/4.png" alt="Design 4" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/5.jpg" alt="Design 5" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/6.jpg" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/7.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/8.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/9.jpg" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/10.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/11.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/12.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/13.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/14.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/15.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/16.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/17.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/Posters/18.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/po/2.jpg" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/po/3.jpg" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/po/4.jpg" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/po/5.jpg" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/po/6.jpg" alt="Design 6" class="w-full">
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Random Image Grid -->
   <section class="container mx-auto px-4 py-12">
@@ -24,43 +101,103 @@
   </section>
 
   <!-- Modal -->
-  <div id="modal" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center">
-    <button id="closeModal" class="absolute top-4 right-4 text-white text-4xl font-bold">&times;</button>
-    <button id="prevBtn" class="absolute left-4 text-white text-4xl font-bold">&larr;</button>
-    <div class="max-w-[90vw] max-h-[90vh] overflow-auto">
-      <img id="modalImage" class="w-auto h-auto max-w-full max-h-full object-contain bg-white shadow-xl" />
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 items-center justify-center">
+    <div class="relative w-full h-full flex items-center justify-center">
+      <button id="closeModal" class="absolute top-4 right-4 text-white text-4xl font-bold z-50">&times;</button>
+      <button id="prevBtn" class="absolute left-4 text-white text-4xl font-bold z-50">&larr;</button>
+      <div class="max-w-[90vw] max-h-[90vh] overflow-auto z-40">
+        <img id="modalImage" class="w-auto h-auto max-w-full max-h-full object-contain bg-white shadow-xl" alt="Preview" />
+      </div>
+      <button id="nextBtn" class="absolute right-4 text-white text-4xl font-bold z-50">&rarr;</button>
     </div>
-    <button id="nextBtn" class="absolute right-4 text-white text-4xl font-bold">&rarr;</button>
   </div>
 
   <!-- Portfolio PDF Section -->
-  <section class="py-12 bg-gray-200 text-center">
-    <h2 class="text-3xl font-bold mb-4">Download My Portfolio</h2>
-    <p class="text-gray-600 mb-6">View my complete collection of creative work in PDF format.</p>
-    <button id="open-pdf" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition">Open Portfolio PDF</button>
-  </section>
+  <section class="py-12 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-6">Charity Catalogues</h2>
+  <p class="text-gray-600 max-w-xl mx-auto mb-10">
+    Browse our detailed catalogues to learn about our social work, programs, and community initiatives.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
+    
+    <!-- Catalogue 1 -->
+    <div class="bg-gray-100 rounded-lg shadow-lg p-6">
+      <img src="/assets/Posters/Capture2.JPG" alt="Catalogue 1" class="w-full h-64 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">General Charity Catalogue</h3>
+      <p class="text-gray-600 mb-4">Includes an overview of our missions, campaigns, and volunteering efforts.</p>
+      <button onclick="window.open('assets/Posters/catalogue.pdf', '_blank')" 
+              class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition">
+        View PDF
+      </button>
+    </div>
+
+    <!-- Catalogue 2 -->
+    <div class="bg-gray-100 rounded-lg shadow-lg p-6">
+      <img src="/assets/Posters/Capture.JPG" alt="Catalogue 2" class="w-full h-64 object-cover rounded mb-4">
+      <h3 class="text-xl font-semibold mb-2">General Charity Catalogue</h3>
+      <p class="text-gray-600 mb-4">Highlights our team members, stories, and professional journey.</p>
+      <button onclick="window.open('assets/Posters/NGO_CATALOG.pdf', '_blank')" 
+              class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition">
+        View PDF
+      </button>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Masonry Grid -->
   <section class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center mb-8">More Designs</h2>
+    <h2 class="text-3xl font-bold text-center mb-8">Logo Designs</h2>
     <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
       <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
-        <img src="/assets/2.jpg" alt="Design 1" class="w-full">
+        <img src="/assets/UIUX/1.png" alt="Design 1" class="w-full">
       </div>
       <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
-        <img src="/assets/project_1.png" alt="Design 2" class="w-full">
+        <img src="/assets/UIUX/2.png" alt="Design 2" class="w-full">
       </div>
       <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
-        <img src="/assets/home/simafp.png" alt="Design 3" class="w-full">
+        <img src="/assets/UIUX/3.png" alt="Design 3" class="w-full">
       </div>
       <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
-        <img src="/assets/project_1.png" alt="Design 4" class="w-full">
+        <img src="/assets/UIUX/BKSlogo2.jpg" alt="Design 4" class="w-full">
       </div>
       <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
-        <img src="/assets/project_1.png" alt="Design 5" class="w-full">
+        <img src="/assets/UIUX/logo-1.jpg" alt="Design 5" class="w-full">
       </div>
       <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
-        <img src="/assets/home/simafp.png" alt="Design 6" class="w-full">
+        <img src="/assets/UIUX/logo.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/logo3.jpg" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/Mheft logo.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/Navodita (JPEG).jpg" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/neem kroli trust.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/newslogo.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/PressLogo3.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/Pria.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/TECH.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/TECH.png" alt="Design 6" class="w-full">
+      </div>
+      <div class="break-inside-avoid overflow-hidden rounded shadow-md bg-white">
+        <img src="/assets/UIUX/TECH.png" alt="Design 6" class="w-full">
       </div>
     </div>
   </section>
@@ -68,16 +205,16 @@
   <!-- Scripts -->
   <script>
     const images = [
-      'assets/banner/1.jpg',
-      'assets/banner/2.jpg',
-      'assets/banner/3.jpg',
-      'assets/banner/4.jpg',
-      'assets/banner/5.jpg',
-      'assets/banner/6.jpg',
-      'assets/banner/7.jpg',
-      'assets/banner/8.jpg',
-      'assets/banner/9.jpg',
-      'assets/banner/10.jpg',
+      '/assets/banner/1.jpg',
+      '/assets/banner/2.jpg',
+      '/assets/banner/3.jpg',
+      '/assets/banner/4.jpg',
+      '/assets/banner/5.jpg',
+      '/assets/banner/6.jpg',
+      '/assets/banner/7.jpg',
+      '/assets/banner/8.jpg',
+      '/assets/banner/9.jpg',
+      '/assets/banner/10.jpg',
     ];
 
     const shuffled = images.sort(() => 0.5 - Math.random());
@@ -108,7 +245,7 @@
       modalImage.src = shuffled[currentIndex];
     }
 
-    shuffled.slice(0, 8).forEach((src, index) => {
+    shuffled.slice(0, 10).forEach((src, index) => {
       const div = document.createElement('div');
       div.className = "relative group cursor-pointer overflow-hidden";
 
@@ -138,11 +275,87 @@
       else if (e.key === 'Escape') closeModal();
     });
 
-    // Open Portfolio PDF
     document.getElementById('open-pdf').addEventListener('click', () => {
-      window.open('https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', '_blank');
+      window.open('assets/Posters/catalogue.pdf', '_blank');
     });
   </script>
+  <!-- Masonry Grid -->
+<section class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Social Media Profile</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden text-center p-6">
+        <img src="/assets/Profile/Docter/Screenshot (190).png" alt="Profile 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-1">https://www.drbachaspati.com/</h3>
+        <p class="text-gray-600 text-sm mb-4">Docter</p>
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.facebook.com/profile.php?id=61567784521722" target="_blank" class="text-blue-600 hover:text-blue-800">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 10-11.5 9.87v-6.99H8.1v-2.88h2.4V9.8c0-2.38 1.42-3.7 3.6-3.7 1.04 0 2.13.18 2.13.18v2.35h-1.2c-1.18 0-1.54.74-1.54 1.5v1.8h2.62l-.42 2.88h-2.2V22A10 10 0 0022 12z" />
+            </svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="text-blue-700 hover:text-blue-900">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v13H0V8zm7.5 0h4.7v1.8h.1c.7-1.2 2.3-2.4 4.7-2.4 5 0 6 3.3 6 7.6V21h-5v-6c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1V21h-5V8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Duplicate and update for more cards -->
+      <!-- Card 2 -->
+      <!-- Card 1 -->
+      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden text-center p-6">
+        <img src="/assets/UIUX/2.png" alt="Profile 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-1">https://aksodisha.in/</h3>
+        <p class="text-gray-600 text-sm mb-4">Charity</p>
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.facebook.com/share/1C1vPRE3fR/" target="_blank" class="text-blue-600 hover:text-blue-800">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 10-11.5 9.87v-6.99H8.1v-2.88h2.4V9.8c0-2.38 1.42-3.7 3.6-3.7 1.04 0 2.13.18 2.13.18v2.35h-1.2c-1.18 0-1.54.74-1.54 1.5v1.8h2.62l-.42 2.88h-2.2V22A10 10 0 0022 12z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/aks_ngo_odisha?utm_source=qr&igsh=Y3g0a3pwOWVvMmt2" target="_blank" class="text-pink-500 hover:text-pink-700">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-1a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
+
+      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden text-center p-6">
+        <img src="/assets/UIUX/logo5.png" alt="Profile 1" class="w-24 h-24 mx-auto rounded-full object-cover mb-4">
+        <h3 class="text-xl font-semibold mb-1">merc sphere</h3>
+        <p class="text-gray-600 text-sm mb-4">Institution</p>
+        <div class="flex justify-center space-x-4">
+          <a href="https://www.facebook.com/profile.php?id=61573742125412" target="_blank" class="text-blue-600 hover:text-blue-800">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path d="M22 12a10 10 0 10-11.5 9.87v-6.99H8.1v-2.88h2.4V9.8c0-2.38 1.42-3.7 3.6-3.7 1.04 0 2.13.18 2.13.18v2.35h-1.2c-1.18 0-1.54.74-1.54 1.5v1.8h2.62l-.42 2.88h-2.2V22A10 10 0 0022 12z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/mercsphere/" target="_blank" class="text-pink-500 hover:text-pink-700">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-1a1.5 1.5 0 100 3 1.5 1.5 0 000-3z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/106380729/admin/page-posts/published/" target="_blank" class="text-blue-700 hover:text-blue-900">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v13H0V8zm7.5 0h4.7v1.8h.1c.7-1.2 2.3-2.4 4.7-2.4 5 0 6 3.3 6 7.6V21h-5v-6c0-1.4 0-3.2-2-3.2-2 0-2.3 1.5-2.3 3.1V21h-5V8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-white text-center py-4">
+   ©Sima Samal.
+</footer>
 
 </body>
 </html>
